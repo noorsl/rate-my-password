@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 450px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.subtitle {
+  color: gray;
+}
+
+.input-box {
+  display: flex;
+  gap: 5px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.bar {
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 6px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#barFill {
+  height: 100%;
+  width: 0%;
+  background-color: red;
+  transition: width 0.3s;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  color: #999;
+  margin-bottom: 5px;
+}
+
+/* turns green when the rule is met */
+li.ok {
+  color: green;
+}
+
+li.ok::before {
+  content: "✔ ";
+}
+
+#warning {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.note {
+  font-size: 13px;
+  color: gray;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  font-size: 13px;
+}

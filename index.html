@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔒 Password Checker</h1>
+    <p class="subtitle">Type a password and see how strong it is</p>
+
+    <div class="input-box">
+      <input type="password" id="password" placeholder="Enter your password...">
+      <button id="showBtn">Show</button>
+    </div>
+
+    <div class="bar">
+      <div id="barFill"></div>
+    </div>
+    <p id="result">-</p>
+
+    <h3>Requirements:</h3>
+    <ul id="rules">
+      <li id="rule-length">At least 8 characters</li>
+      <li id="rule-upper">An uppercase letter (A-Z)</li>
+      <li id="rule-lower">A lowercase letter (a-z)</li>
+      <li id="rule-number">A number (0-9)</li>
+      <li id="rule-symbol">A symbol like ! @ # $</li>
+    </ul>
+
+    <p id="warning"></p>
+
+    <p class="note">Note: your password is not saved or sent anywhere. Everything runs in your browser.</p>
+  </div>
+
+  <footer>Made by Bothynah</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
